@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-pink: #b84c97;
+    --clr-white: #f2ebd9;
+    --clr-accent: #1f1e1e;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+h4{
+ margin-block: 1rem;   
+}
+
+.header {
+    background-color: var(--clr-pink);
+    color: var(--clr-white);
+    padding-block: 1rem;
+}
+
+.main {
+    padding-block: 2rem;
+}
+
+.titulo {
+    margin-bottom: 1rem;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.producto {
+    background-color: var(--clr-pink);
+    padding: .5rem;
+    border-radius: 1rem;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-img {
+    border-radius: .75rem;
+}
+
+.producto-btn {
+    border-radius: .75rem;
+    border: 0;
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    padding: .5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    border: 2px solid var(--clr-accent);
+    transition: .2s;
+}
+
+.producto-btn:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-pink);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.carrito-producto {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-pink);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: var(--clr-white);
+}
+
+.carrito-producto-btn {
+    background-color: var(--clr-white);
+    border: 0;
+    padding: .25rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.footer {
+    background-color: var(--clr-pink);
+    color: var(--clr-white);
+    padding-block: 2rem;
+}
+#vaciarCarrito{
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    border: none;
+    padding: .25rem 1rem;
+    border-radius: 1rem;
+    margin-block: 1rem;
+    cursor: pointer;
+}
